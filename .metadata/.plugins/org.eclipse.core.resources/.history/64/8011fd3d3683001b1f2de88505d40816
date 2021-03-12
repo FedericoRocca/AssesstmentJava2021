@@ -1,0 +1,10 @@
+package classes;
+
+public class PrestamoTasaFija extends Prestamo {
+	private boolean cancelable;
+
+	@Override
+	public void Cancelar() {
+	}
+
+}

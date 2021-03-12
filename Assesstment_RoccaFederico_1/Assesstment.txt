@@ -1,0 +1,42 @@
+Se desea implementar en Java parte del modelo de objetos de un sistema bancario relacionado con los préstamos personales. 
+
+El banco ofrece distintos tipos de líneas de préstamos personales.
+
+Para todo préstamo se deberá conocer la fecha de otorgamiento, el plazo en meses, el día de vencimiento de cada cuota (por ejemplo, 15 significa que cada cuota debe ser cancelada antes del 15 de cada mes) y el monto original (esta información se establece al momento de otorgamiento y no podrá ser modificada en ningún momento). 
+
+Además se deberá poder conocer la cantidad de cuotas pagas y por pagar, el monto abonado y el capital adeudado; se deberá poder consultar si existen cuotas impagas, la próxima fecha de pago y el monto a pagar de la próxima cuota (asumiendo que no existen cuotas precedentes impagas). 
+
+Además, todos los prestamos deberán proveer una operación para cancelar totalmente el monto de la cuota a vencer.
+
+La cancelación de una cuota sólo podrá realizarse si no existen cuotas previas impagas. 
+
+Existen dos líneas de préstamos personales: a tasa fija, la que se establece al momento de constitución del préstamo, y a tasa variable, la que se fija inicialmente al momento de constitución y puede modificarse oportunamente (por simplicidad, puede asumir que los préstamos a tasa variable tienen una operación que permite cambiar la tasa y esta se utilizará para pagar la próxima cuota).
+
+Algunos préstamos a tasa fija pueden cancelarse completamente en modo anticipado. En este caso, el monto de cancelación se calcula aplicando una décima parte de la tasa de interés acordada al momento de la constitución. 
+
+Al momento del otorgamiento de crédito se acuerda si el mismo es cancelable anticipadamente o no, y esto no puede cambiarse.
+
+Tener presente que los préstamos a tasa variable no son cancelables anticipadamente.
+
+Para todo préstamo, se deberá poder conocer si es cancelable anticipadamente o no; los cancelables deberán poder determinar el monto de cancelación y proporcionar una operación que permitan su cancelación total.
+
+1- Se solicita identificar clases, relaciones de herencia y el protocolo de los objetos. 
+
+2- Implementar su solución en Java. Implementar un programa que utilice la jerarquía para construir préstamos de distintos tipos y ejercitar sus funcionalidades.
+
+3- Utilizar excepciones para indicar situaciones de error en las operaciones de préstamos.
+
+4- Extender la solución de manera tal que para cada préstamo sea posible conocer los datos concernientes al pago de  cada cuota: en particular, la fecha de pago, y los montos de capital, de intereses pagados.
+
+5-  Se desea extender la solución de manera tal que una clase pueda llevar registro de la actividad de préstamos. La misma debe ser responsable de conocer la cantidad de créditos otorgados y las cantidades de créditos cancelados parcial y/o totalmente.
+
+6- Analizar la solución propuesta de manera tal de identificar si la misma viola principios S.O.L.I.D.
+
+
+IMPORTANTE: Los ejercicios restantes se presentarán oportunamente
+
+Modalidad: Take home -  Resolución en grupos de hasta 2 personas
+Fecha de Entrega: 31 de marzo 2021
+Para consultas y la entrega: cursojavabbva@gmail.com
+
+IMPORTANTE: Resolver cada ejercicio separadamente. Se espera una solución para cada ejercicio. No una única solución para el último ejercicio. 

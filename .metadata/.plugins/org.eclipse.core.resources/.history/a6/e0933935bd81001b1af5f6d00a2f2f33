@@ -1,0 +1,13 @@
+package classes;
+
+import java.time.LocalDateTime;
+
+public abstract class Prestamo implements CancelacionPrestamo {
+	private LocalDateTime fechaOtorgamiento;
+	private int plazo;
+	private int diaVencimiento;
+	private double montoOriginal;
+	private int cuotasPagas;
+	private double montoAbonado;
+	private LocalDateTime fechaProximoPago;
+}

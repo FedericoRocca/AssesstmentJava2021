@@ -1,0 +1,12 @@
+package classes;
+
+import java.time.LocalDateTime;
+
+public abstract class Prestamo {
+	private LocalDateTime fechaOtorgamiento;
+	private int plazo;
+	private int diaVencimiento;
+	private double montoOriginal;
+	private int cuotasPagas;
+	private int cuotasaPagar;
+}

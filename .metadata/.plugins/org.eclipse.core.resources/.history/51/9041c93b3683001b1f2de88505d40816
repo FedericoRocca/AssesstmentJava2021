@@ -1,0 +1,14 @@
+package classes;
+
+public class PrestamoTasaFija extends Prestamo {
+	private boolean cancelable;
+
+	public PrestamoTasaFija() {
+		super(fechaOtorgamiento, cuotasPagas, diaVencimiento, montoAbonado, cuotasPagas, montoAbonado, fechaOtorgamiento, montoAbonado);
+	}
+
+	@Override
+	public void Cancelar() {
+	}
+
+}
