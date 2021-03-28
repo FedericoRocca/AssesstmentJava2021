@@ -1,0 +1,29 @@
+package classes;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class PrestamoTasaFija extends Prestamo {
+	public PrestamoTasaFija(LocalDateTime fechaOtorgamiento, int plazo, LocalDate diaVencimiento, double montoOriginal, int cuotasAPagar,
+			LocalDateTime fechaProximoPago, double tasa) {
+		super(fechaOtorgamiento, plazo, diaVencimiento, montoOriginal, cuotasAPagar, cuotasAPagar, tasa, fechaProximoPago, tasa);
+		
+	}
+
+	@Override
+	public void Cancelar() {
+		// a implementar
+	}
+
+	@Override
+	public String toString()
+	{
+		return "PrestamoTasaFija: [Fecha de otorgamiento: " + getFechaOtorgamiento() + ", plazo: " + getPlazo()
+				+ ", dia de vencimiento" + getDiaVencimiento() + ", monto original: $" + getMontoOriginal()
+				+ ", getCuotasAPagar()=" + getCuotasAPagar() + ", getCuotasPagas()=" + getCuotasPagas()
+				+ ", getMontoAbonado()=" + getMontoAbonado() + ", getFechaProximoPago()=" + getFechaProximoPago()
+				+ ", getTasa()=" + getTasa() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
+	}
+
+}

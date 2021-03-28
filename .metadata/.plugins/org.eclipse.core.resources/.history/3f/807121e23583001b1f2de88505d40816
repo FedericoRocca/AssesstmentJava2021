@@ -1,9 +1,0 @@
-package classes;
-
-public class PrestamoTasaFija extends Prestamo {
-
-	public PrestamoTasaFija() {
-		private boolean cancelable;
-	}
-
-}

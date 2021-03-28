@@ -2,6 +2,7 @@ package main;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.zip.CheckedOutputStream;
 
 import classes.PrestamoTasaFija;
 
@@ -19,7 +20,7 @@ public class Main {
 				15, 
 				100000, 
 				50, 
-				10 );
+				1.1 );
 		
 		System.out.println(ptf);
 		
@@ -27,6 +28,32 @@ public class Main {
 		System.out.println("El plazo del prestamo es: " + ptf.getPlazo());
 		System.out.println("El día de vencimiento es: " + ptf.getDiaVencimiento());
 		System.out.println("Monto original: " + ptf.getMontoOriginal());
+		System.out.println("Cuotas pagas: " + ptf.getCuotasPagas());
+		System.out.println("Cuotas a pagar: " + ptf.getCuotasAPagar());
+		System.out.println("Monto abonado: " + ptf.getMontoAbonado());
+		System.out.println("Capital adeudado: " + ptf.getCapitalAdeudado());
+		System.out.println("Tiene cuotas impagas?: " + ptf.hasCuotasImpagas());
+		System.out.println("Fecha de próximo pago: " + ptf.getFechaProximoPago());
+		System.out.println("Tasa del prestamo: " + ptf.getTasa());
+		System.out.println("Monto de próxima cuota: " + ptf.getMontoProximaCuota());
+		System.out.println();
+		System.out.println("Operaciones sobre el prestamo a tasa fija");
+		System.out.println("Consultamos el monto a pagar de la próxima cuota.");
+		System.out.println("$" + ptf.getMontoProximaCuota());
+		System.out.println("Cancelamos la primer cuota");
+		try
+		{
+			ptf.cancelarSiguienteCuota(2200);
+		}
+		catch (Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+		System.out.println("Monto original: " + ptf.getMontoOriginal());
+		System.out.println("Monto abonado: " + ptf.getMontoAbonado());
+		System.out.println("Cuotas pagas: " + ptf.getCuotasPagas());
+		System.out.println("Cuotas a pagar: " + ptf.getCuotasAPagar());
+		System.out.println();
 		System.out.println("---------- Fin de prestamo a tasa fija ----------");
 		
 		

@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 public class PrestamoTasaFija extends Prestamo {
 	public PrestamoTasaFija(LocalDateTime fechaOtorgamiento, int plazo, int diaVencimiento, double montoOriginal, int cuotasAPagar,
 			double tasa) {
-		super(fechaOtorgamiento, plazo, diaVencimiento, montoOriginal, cuotasAPagar, tasa);
+		super(fechaOtorgamiento, plazo, diaVencimiento, montoOriginal, tasa);
 		
 	}
 

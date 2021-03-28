@@ -1,0 +1,11 @@
+package classes;
+
+public class Cuota
+{
+
+	public Cuota()
+	{
+		double monto;
+	}
+
+}

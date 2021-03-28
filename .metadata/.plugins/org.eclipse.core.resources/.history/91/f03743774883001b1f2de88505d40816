@@ -1,9 +1,0 @@
-package classes;
-
-public class PrestamoTasaVariable extends Prestamo {
-
-	public PrestamoTasaVariable() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

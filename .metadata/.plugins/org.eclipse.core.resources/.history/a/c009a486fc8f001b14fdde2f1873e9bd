@@ -1,0 +1,13 @@
+package classes;
+
+import org.omg.CORBA.PRIVATE_MEMBER;
+
+public class Cuota
+{
+
+	public Cuota()
+	{
+		PRIVATE_MEMBER  monto;
+	}
+
+}

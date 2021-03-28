@@ -1,0 +1,17 @@
+package classes;
+
+public class Cuota
+{
+	private double monto;
+	
+	public Cuota(double montoCuotas)
+	{
+		setMonto(montoCuotas);
+	}
+
+	private void setMonto(double monto)
+	{
+		this.monto = monto;
+	}
+
+}

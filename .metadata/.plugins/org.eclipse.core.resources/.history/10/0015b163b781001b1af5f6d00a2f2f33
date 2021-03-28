@@ -1,8 +1,0 @@
-package classes;
-
-import java.time.LocalDateTime;
-
-public abstract class Prestamo {
-	private LocalDateTime fechaOtorgamiento;
-	private int plazo;
-}

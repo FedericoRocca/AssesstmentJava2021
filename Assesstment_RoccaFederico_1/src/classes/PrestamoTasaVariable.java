@@ -7,7 +7,7 @@ public class PrestamoTasaVariable extends Prestamo {
 
 	public PrestamoTasaVariable(LocalDateTime fechaOtorgamiento, int plazo, int diaVencimiento,
 			double montoOriginal, int cuotasAPagar, int cuotasPagas, double montoAbonado, LocalDateTime fechaProximoPago, double tasa) {
-		super(fechaOtorgamiento, plazo, diaVencimiento, montoOriginal, cuotasAPagar, tasa);
+		super(fechaOtorgamiento, plazo, diaVencimiento, montoOriginal, tasa);
 	}
 
 	@Override
