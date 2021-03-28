@@ -9,18 +9,26 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		System.out.println("Empezamos el main de assesstment");
+		System.out.println("Empezamos el main del assesstment");
+		System.out.println("---------- Inicio de prestamo a tasa fija ----------");
+		System.out.println("Creamos un nuevo prestamo a tasa fija con los siguientes datos:");
 		
 		PrestamoTasaFija ptf = new PrestamoTasaFija(
-				LocalDateTime.now(), 
+				LocalDateTime.of(2021, 1, 10, 15, 00), 
 				50, 
-				LocalDate.now().plusDays(10), 
+				15, 
 				100000, 
 				50, 
-				0, 
-				0, 
-				LocalDateTime.now().plusDays(1), 
 				10 );
+		
+		System.out.println(ptf);
+		
+		System.out.println("La fecha de otorgamiento del prestamo es: " + ptf.getFechaOtorgamiento());
+		System.out.println("El plazo del prestamo es: " + ptf.getPlazo());
+		System.out.println("El día de vencimiento es: " + ptf.getDiaVencimiento());
+		System.out.println("Monto original: " + ptf.getMontoOriginal());
+		System.out.println("---------- Fin de prestamo a tasa fija ----------");
+		
 		
 	}
 

@@ -7,25 +7,34 @@ import interfaces.CancelacionPrestamo;
 public abstract class Prestamo implements CancelacionPrestamo {
 	private LocalDateTime fechaOtorgamiento;
 	private int plazo;
-	private LocalDate diaVencimiento;
+	private int diaVencimiento;
 	private double montoOriginal;
-	private double cuotasAPagar;
+	private int cuotasAPagar;
 	private int cuotasPagas;
 	private double montoAbonado;
 	private LocalDateTime fechaProximoPago;
 	private double tasa;
 	
-	public Prestamo(LocalDateTime fechaOtorgamiento, int plazo, LocalDate diaVencimiento, double montoOriginal, int cuotasAPagar,
-			int cuotasPagas, double montoAbonado, LocalDateTime fechaProximoPago, double tasa) {
+	public Prestamo(LocalDateTime fechaOtorgamiento, int plazo, int diaVencimiento, double montoOriginal, int cuotasAPagar,
+			double tasa) {
 		super();
+		
 		this.fechaOtorgamiento = fechaOtorgamiento;
 		this.plazo = plazo;
 		this.diaVencimiento = diaVencimiento;
 		this.montoOriginal = montoOriginal;
 		this.cuotasAPagar = cuotasAPagar;
-		this.cuotasPagas = cuotasPagas;
-		this.montoAbonado = montoAbonado;
-		this.fechaProximoPago = fechaProximoPago;
+		this.cuotasPagas = 0;
+		this.montoAbonado = 0.0f;
+		if( fechaOtorgamiento.getDayOfMonth() < diaVencimiento )
+		{
+			fechaProximoPago = fechaOtorgamiento.plusDays( diaVencimiento - fechaOtorgamiento.getDayOfMonth() );
+		}
+		else
+		{
+			fechaProximoPago = fechaOtorgamiento.plusMonths(1);
+			fechaProximoPago = fechaProximoPago.withDayOfMonth( diaVencimiento );
+		}
 		this.tasa = tasa;
 	}
 
@@ -37,7 +46,7 @@ public abstract class Prestamo implements CancelacionPrestamo {
 		return plazo;
 	}
 
-	public LocalDate getDiaVencimiento() {
+	public int getDiaVencimiento() {
 		return diaVencimiento;
 	}
 
@@ -45,7 +54,7 @@ public abstract class Prestamo implements CancelacionPrestamo {
 		return montoOriginal;
 	}
 
-	public double getCuotasAPagar() {
+	public int getCuotasAPagar() {
 		return cuotasAPagar;
 	}
 
