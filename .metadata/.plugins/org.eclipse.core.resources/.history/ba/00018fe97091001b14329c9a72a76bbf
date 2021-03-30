@@ -1,0 +1,13 @@
+package classes;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class PrestamoTasaVariable extends Prestamo {
+
+	public PrestamoTasaVariable(LocalDateTime fechaOtorgamiento, int plazo, int diaVencimiento, double montoOriginal, int cuotasAPagar,
+			double tasa) {
+		super(fechaOtorgamiento, plazo, diaVencimiento, montoOriginal, tasa);
+
+	}
+	}

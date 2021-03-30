@@ -1,6 +1,5 @@
 package classes;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class PrestamoTasaFija extends Prestamo {
@@ -8,11 +7,6 @@ public class PrestamoTasaFija extends Prestamo {
 			double tasa) {
 		super(fechaOtorgamiento, plazo, diaVencimiento, montoOriginal, tasa);
 		
-	}
-
-	@Override
-	public void Cancelar() {
-		// a implementar
 	}
 
 	@Override

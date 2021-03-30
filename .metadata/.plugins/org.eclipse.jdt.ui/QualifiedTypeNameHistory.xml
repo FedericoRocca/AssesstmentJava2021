@@ -4,5 +4,15 @@
     <fullyQualifiedTypeName name="interfaces.CancelacionPrestamo"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="classes.PrestamoTasaFija"/>
+    <fullyQualifiedTypeName name="org.omg.CORBA.PRIVATE_MEMBER"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.zip.CheckedOutputStream"/>
+    <fullyQualifiedTypeName name="classes.Cuota"/>
+    <fullyQualifiedTypeName name="excepciones.MontoInsuficienteException"/>
+    <fullyQualifiedTypeName name="classes.Prestamo"/>
+    <fullyQualifiedTypeName name="excepciones.TasaIncorrectaException"/>
+    <fullyQualifiedTypeName name="classes.PrestamoTasaVariable"/>
+    <fullyQualifiedTypeName name="excepciones.MontoIncorrectoException"/>
+    <fullyQualifiedTypeName name="excepciones.SinCuotasAPagarException"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
 </qualifiedTypeNameHistroy>

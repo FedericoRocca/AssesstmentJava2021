@@ -1,0 +1,7 @@
+package interfaces;
+
+import excepciones.SinCuotasAPagarException;
+
+public interface CancelacionPrestamo {
+	public void Cancelar(double) throws SinCuotasAPagarException;
+}

@@ -1,0 +1,18 @@
+package classes;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class PrestamoTasaFijaCancelable extends PrestamoTasaFija
+{
+
+	public PrestamoTasaFijaCancelable(LocalDateTime fechaOtorgamiento, int plazo, int diaVencimiento,
+			double montoOriginal, int cuotasAPagar, int cuotasPagas, double montoAbonado,
+			LocalDateTime fechaProximoPago, double tasa)
+	{
+		super(fechaOtorgamiento, plazo, diaVencimiento, montoOriginal, cuotasAPagar,
+			 tasa);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,43 @@
+package classes;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+import excepciones.SinCuotasAPagarException;
+import interfaces.CancelacionPrestamo;
+
+public class PrestamoTasaFijaCancelable extends PrestamoTasaFija implements CancelacionPrestamo
+{
+
+	public PrestamoTasaFijaCancelable(LocalDateTime fechaOtorgamiento, int plazo, int diaVencimiento,
+			double montoOriginal, int cuotasAPagar, int cuotasPagas, double montoAbonado,
+			LocalDateTime fechaProximoPago, double tasa)
+	{
+		super(fechaOtorgamiento, plazo, diaVencimiento, montoOriginal, cuotasAPagar,
+			 tasa);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void Cancelar() throws SinCuotasAPagarException
+	{
+		try
+		{
+			if( getCuotasAPagar() <= 0 )
+			{
+				throw new SinCuotasAPagarException("No hay cuotas pendientes por pagar");
+			}
+			else {
+				for( int i = 0; i < cuotasAPagar.size(); i++ )
+				{
+					// todo
+				}
+			}
+		}
+		catch (SinCuotasAPagarException e)
+		{
+			throw e;
+		}
+	}
+
+}
